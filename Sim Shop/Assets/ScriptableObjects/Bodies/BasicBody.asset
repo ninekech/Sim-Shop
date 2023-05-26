@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bececcb275162644db13f321e7109dac, type: 3}
+  m_Name: BasicBody
+  m_EditorClassIdentifier: 
+  UpSprites:
+  - {fileID: -1250627360, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -361748130, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -356616680, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -2050055369, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 1978233934, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 109732203, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 2019894747, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 748954923, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  RightSprites:
+  - {fileID: 1855269788, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 531916753, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -199660315, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 978570534, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 1433204204, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -69179297, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -2075107538, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 2098477789, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  DownSprites:
+  - {fileID: 1509483219, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -376670484, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -1280618790, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -1911478222, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 972886538, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -1105615837, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 1953097102, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -912310232, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  LeftSprites:
+  - {fileID: -1752137615, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -1333274472, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 1035432924, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -1453284303, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 1880840615, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -218712239, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: -321273476, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}
+  - {fileID: 896880414, guid: dfb8988f2097e7c46823f7af0d8a6417, type: 3}

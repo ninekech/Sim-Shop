@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bececcb275162644db13f321e7109dac, type: 3}
+  m_Name: BasicShirt
+  m_EditorClassIdentifier: 
+  UpSprites:
+  - {fileID: 1079433412, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -52040532, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -711141885, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -639269017, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: 1295790534, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -508707683, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -1994410992, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -2134443957, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  RightSprites:
+  - {fileID: 1079433412, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -52040532, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -711141885, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -639269017, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: 1295790534, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -508707683, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -1994410992, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -2134443957, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  DownSprites:
+  - {fileID: 1079433412, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -52040532, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -711141885, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -639269017, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: 1295790534, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -508707683, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -1994410992, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -2134443957, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  LeftSprites:
+  - {fileID: 1079433412, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -52040532, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -711141885, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -639269017, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: 1295790534, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -508707683, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -1994410992, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}
+  - {fileID: -2134443957, guid: 7fe8e505590ac4c478a9fc5518a68889, type: 3}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040d34ed02a60b343967d3a528c3b4b8, type: 3}
+  m_Name: CurrentOutfitSO
+  m_EditorClassIdentifier: 
+  BodySprites: {fileID: 11400000, guid: a5fcc9c597931e74bb87160043da5eee, type: 2}
+  ShirtSprites: {fileID: 11400000, guid: c71171e73727ec743820a1d6e5d68728, type: 2}
+  PantsSprites: {fileID: 11400000, guid: 4c1baa075bdaf5b40be8240e95c1120c, type: 2}
+  HairSprites: {fileID: 11400000, guid: 5213365136983ee47a5b28cb4a247eef, type: 2}

@@ -43,7 +43,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -4775,8 +4775,8 @@ TextureImporter:
       char1_39: 296210500
       char1_165: 291746008
       char1_77: -1361630339
-      char1_78: -1957738114
       char1_197: 1480118017
+      char1_78: -1957738114
       char1_175: -708269735
       char1_87: 116565684
       char1_22: -2075107538
@@ -4787,9 +4787,9 @@ TextureImporter:
       char1_61: -867706521
       char1_134: -290218460
       char1_211: -1346679017
-      char1_137: -832091488
       char1_144: 1600827055
       char1_44: -667239710
+      char1_137: -832091488
       char1_93: -1232588386
       char1_84: -550028273
       char1_114: -1552289996
@@ -4829,8 +4829,8 @@ TextureImporter:
       char1_159: 2139701990
       char1_209: -1529253278
       char1_20: 1433204204
-      char1_155: -1725700933
       char1_177: 51825603
+      char1_155: -1725700933
       char1_189: 1431781580
       char1_67: 1253707870
       char1_12: 1978233934
