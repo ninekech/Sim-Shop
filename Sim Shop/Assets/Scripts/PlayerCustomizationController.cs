@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,12 +13,15 @@ public partial class PlayerCustomizationController : MonoBehaviour
     [SerializeField] private SpriteRenderer pantsRenderer;
     [SerializeField] private SpriteRenderer hairRenderer;
 
+    public static Action<ShopItemType> OnSoldEquippedItem;
+    public static Action<ShopItemType> OnEquippedItem;
+
     private float _counter = 0f;
     private List<Sprite> _currentBodySprites;
     private List<Sprite> _currentShirtSprites;
     private List<Sprite> _currentPantsSprites;
     private List<Sprite> _currentHairSprites;
-    private AnimationState _currentAnimationState;
+    private AnimationState _currentAnimationState = AnimationState.None;
 
     public AnimationState CurrentAnimationState 
     {
@@ -42,6 +46,20 @@ public partial class PlayerCustomizationController : MonoBehaviour
         else if (movement.y < 0)
             CurrentAnimationState = AnimationState.WalkDown;
         else CurrentAnimationState = AnimationState.Idle;
+    }
+
+    private void Awake()
+    {
+        currentOutfitSO.OnRefresh += ResetAnimation;
+        OnSoldEquippedItem += ResetDefaultItem;
+        OnEquippedItem += EquippedItemOnNaked;
+    }
+
+    private void OnDestroy()
+    {
+        currentOutfitSO.OnRefresh -= ResetAnimation;
+        OnSoldEquippedItem -= ResetDefaultItem;
+        OnEquippedItem -= EquippedItemOnNaked;
     }
 
     private void Start()
@@ -73,6 +91,30 @@ public partial class PlayerCustomizationController : MonoBehaviour
         else _counter--;
     }
 
+    private void ResetAnimation()
+    {
+        bodyRenderer.sprite = currentOutfitSO.BodySprites.DownSprites[0];
+        shirtRenderer.sprite = currentOutfitSO.ShirtSprites.DownSprites[0];
+        pantsRenderer.sprite = currentOutfitSO.PantsSprites.DownSprites[0];
+        hairRenderer.sprite = currentOutfitSO.HairSprites.DownSprites[0];
+    }
+
+    private void EquippedItemOnNaked(ShopItemType type)
+    {
+        switch (type)
+        {
+            case ShopItemType.Shirts:
+                shirtRenderer.gameObject.SetActive(true);
+                break;
+            case ShopItemType.Hair:
+                hairRenderer.gameObject.SetActive(true);
+                break;
+            case ShopItemType.Pants:
+                pantsRenderer.gameObject.SetActive(true);
+                break;
+        }
+    }
+
     private void UpdateUsedSprites(AnimationState newAnimState)
     {
         currentOutfitSO.CurrentBodyIndex = 0;
@@ -82,6 +124,9 @@ public partial class PlayerCustomizationController : MonoBehaviour
 
         switch (newAnimState)
         {
+            case AnimationState.Idle:
+                ResetAnimation();
+                break;
             case AnimationState.WalkUp:
                 _currentBodySprites = currentOutfitSO.BodySprites.UpSprites;
                 _currentShirtSprites = currentOutfitSO.ShirtSprites.UpSprites;
@@ -127,5 +172,21 @@ public partial class PlayerCustomizationController : MonoBehaviour
         if (currentOutfitSO.CurrentHairIndex >= _currentHairSprites.Count - 1)
             currentOutfitSO.CurrentHairIndex = 0;
         else currentOutfitSO.CurrentHairIndex++;
+    }
+
+    private void ResetDefaultItem(ShopItemType type)
+    {
+        switch (type)
+        {
+            case ShopItemType.Hair:
+                hairRenderer.gameObject.SetActive(false);
+                break;
+            case ShopItemType.Pants:
+                pantsRenderer.gameObject.SetActive(false);
+                break;
+            case ShopItemType.Shirts:
+                shirtRenderer.gameObject.SetActive(false);
+                break;
+        }
     }
 }

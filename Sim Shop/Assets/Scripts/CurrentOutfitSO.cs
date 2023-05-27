@@ -13,4 +13,6 @@ public class CurrentOutfitSO : ScriptableObject
     [HideInInspector] public int CurrentShirtIndex;
     [HideInInspector] public int CurrentPantsIndex;
     [HideInInspector] public int CurrentHairIndex;
+
+    public Action OnRefresh;
 }

@@ -2,6 +2,7 @@
 {
     public enum AnimationState
     {
+        None,
         Idle, 
         WalkLeft,
         WalkRight,

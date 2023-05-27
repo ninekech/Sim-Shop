@@ -373,10 +373,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6482477197512898601}
+  - component: {fileID: 2797520616713962840}
   - component: {fileID: 6482477197512898596}
   - component: {fileID: 6482477197512898603}
   - component: {fileID: 6482477197512898602}
-  - component: {fileID: 2797520616713962840}
   m_Layer: 5
   m_Name: shopElement
   m_TagString: Untagged
@@ -407,6 +407,22 @@ RectTransform:
   m_AnchoredPosition: {x: 63.35, y: -63}
   m_SizeDelta: {x: 126.7, y: 126}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2797520616713962840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6482477197512898600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1d946cb34ad3840a96dd30c358b4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentImage: {fileID: 6482477196794078581}
+  priceText: {fileID: 275267840277910846}
+  locker: {fileID: 6482477197104163110}
+  currentOutfitSO: {fileID: 11400000, guid: 48808d2dd19e86d4a80f3152ccf2e2c9, type: 2}
 --- !u!222 &6482477197512898596
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -488,19 +504,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6482477197512898603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2797520616713962840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6482477197512898600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb1d946cb34ad3840a96dd30c358b4f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentImage: {fileID: 6482477196794078581}
-  priceText: {fileID: 275267840277910846}
-  locker: {fileID: 6482477197104163110}
+      m_Calls:
+      - m_Target: {fileID: 2797520616713962840}
+        m_TargetAssemblyTypeName: ShopElement, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
