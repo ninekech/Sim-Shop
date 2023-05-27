@@ -12,7 +12,7 @@ public partial class PlayerCustomizationController : MonoBehaviour
     [SerializeField] private SpriteRenderer pantsRenderer;
     [SerializeField] private SpriteRenderer hairRenderer;
 
-    private float _counter = 0.5f;
+    private float _counter = 0f;
     private List<Sprite> _currentBodySprites;
     private List<Sprite> _currentShirtSprites;
     private List<Sprite> _currentPantsSprites;
